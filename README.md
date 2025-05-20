@@ -24,7 +24,7 @@ A modern, production-ready template for building microservices with FastAPI.
 1. Clone the repository:
    ```bash
    git clone https://github.com/dmsierra11/fantasy-fastapi-template.git
-   cd fastapi-microservice-template
+   cd fantasy-fastapi-template
    ```
 
 2. Create and activate a virtual environment:
@@ -169,7 +169,7 @@ docker run -p 8000:8000 yourusername/fastapi-microservice
 ## Project Structure
 
 ```
-fastapi-microservice-template/
+fantasy-fastapi-template/
 ├── app/
 │   ├── routers/         # API routes
 │   │   └── example_router.py
