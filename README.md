@@ -146,17 +146,25 @@ The project uses `pyproject.toml` for configuration of various tools:
 
 ### Docker Support
 
-Build the Docker image:
+Build the Docker image locally:
 
 ```bash
 docker build -t fastapi-microservice .
 ```
 
-Run the container:
+Run the container from the local image:
 
 ```bash
 docker run -p 8000:8000 fastapi-microservice
 ```
+
+Or, run the container directly from DockerHub (replace `yourusername` with your DockerHub username):
+
+```bash
+docker run -p 8000:8000 yourusername/fastapi-microservice
+```
+
+> **Note:** Replace `yourusername` with your DockerHub username if you want to pull the image from DockerHub.
 
 ## Project Structure
 
