@@ -7,7 +7,7 @@ A modern, production-ready template for building microservices with FastAPI.
 - 🚀 FastAPI framework with modern Python features
 - 📝 Pydantic for data validation and settings management
 - 🧪 Comprehensive test suite with pytest
-- 🔍 Code quality tools (black, isort, mypy, ruff)
+- 🔍 Code quality tools (black, isort, mypy, flake8)
 - 🔄 Pre-commit hooks for code quality
 - 🐳 Docker support
 - 🔐 Environment-based configuration
@@ -23,7 +23,7 @@ A modern, production-ready template for building microservices with FastAPI.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/fastapi-microservice-template.git
+   git clone https://github.com/dmsierra11/fantasy-fastapi-template.git
    cd fastapi-microservice-template
    ```
 
@@ -125,16 +125,24 @@ pytest
 
 The project uses several tools to maintain code quality:
 
-- **black**: Code formatting
-- **isort**: Import sorting
-- **mypy**: Static type checking
-- **ruff**: Fast Python linter
+- **black** (>=23.10.1): Code formatting
+- **isort** (>=5.12.0): Import sorting
+- **mypy** (>=1.6.1): Static type checking
+- **flake8** (>=6.1.0): Python linter
 
 Run all checks:
 
 ```bash
 pre-commit run --all-files
 ```
+
+### Project Configuration
+
+The project uses `pyproject.toml` for configuration of various tools:
+- Black formatting settings
+- isort import sorting
+- MyPy type checking
+- pytest configuration
 
 ### Docker Support
 
@@ -175,6 +183,19 @@ fastapi-microservice-template/
 ├── pyproject.toml      # Project configuration
 └── requirements.txt    # Project dependencies
 ```
+
+## Dependencies
+
+Key dependencies and their minimum versions:
+- FastAPI >= 0.104.0
+- Uvicorn >= 0.24.0
+- Pydantic >= 2.4.2
+- Pydantic-settings >= 2.0.3
+- Python-dotenv >= 1.0.0
+- Pytest >= 7.4.3
+- HTTPX >= 0.25.0
+
+For a complete list of dependencies, see `requirements.txt`.
 
 ## Contributing
 
