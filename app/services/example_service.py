@@ -1,13 +1,23 @@
+"""Example service module for managing items."""
+
 from typing import List, Optional
+
 from pydantic import BaseModel
 
+
 class Item(BaseModel):
+    """Data model for an item."""
+
     id: Optional[int] = None
     name: str
     description: Optional[str] = None
 
+
 class ExampleService:
-    def __init__(self):
+    """Service for managing items."""
+
+    def __init__(self) -> None:
+        """Initialize the service with empty storage."""
         # In-memory storage for demonstration
         self.items: List[Item] = []
         self._counter = 1
@@ -40,4 +50,4 @@ class ExampleService:
         """Delete an item."""
         initial_length = len(self.items)
         self.items = [item for item in self.items if item.id != item_id]
-        return len(self.items) < initial_length 
+        return len(self.items) < initial_length

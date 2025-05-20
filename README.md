@@ -58,6 +58,63 @@ The API will be available at http://localhost:8000
 
 ## Development
 
+### Setup
+
+1. Create a virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+2. Install dependencies and pre-commit hooks:
+   ```bash
+   make install
+   ```
+
+### Development Workflow
+
+1. Format code:
+   ```bash
+   make format
+   ```
+
+2. Run linters:
+   ```bash
+   make lint
+   ```
+
+3. Run tests:
+   ```bash
+   make test
+   ```
+
+4. Clean up:
+   ```bash
+   make clean
+   ```
+
+### Code Style
+
+This project follows strict code style guidelines:
+
+- Line length: 88 characters (Black's default)
+- Type hints: Required for all functions and methods
+- Docstrings: Required for all modules, classes, and functions
+- Imports: Sorted using isort with Black profile
+- Formatting: Black for code formatting
+- Linting: Flake8 with docstring checks
+- Type checking: MyPy with strict settings
+
+The pre-commit hooks will automatically enforce these guidelines on each commit.
+
+### Best Practices
+
+1. Always run `make format` before committing to ensure consistent code style
+2. Write tests for new features and bug fixes
+3. Keep docstrings up to date
+4. Use type hints consistently
+5. Run `make lint` to catch issues before committing
+
 ### Running Tests
 
 ```bash
@@ -129,4 +186,4 @@ fastapi-microservice-template/
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.

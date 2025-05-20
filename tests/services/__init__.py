@@ -1,3 +1,1 @@
-"""
-Tests for services
-""" 
+"""Service tests package."""

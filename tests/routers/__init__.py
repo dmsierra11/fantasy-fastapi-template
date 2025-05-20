@@ -1,3 +1,1 @@
-"""
-Tests for API routers
-""" 
+"""Router tests package."""

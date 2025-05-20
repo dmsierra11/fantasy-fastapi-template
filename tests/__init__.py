@@ -1,3 +1,1 @@
-"""
-Test suite for FastAPI Microservice Template
-""" 
+"""Test package."""
